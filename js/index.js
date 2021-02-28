@@ -33,13 +33,19 @@ function checkboxEvent() {
         document.querySelector('.oldprice').classList.add('unactive');
         slider.classList.add('unactive');
         document.querySelector("#mainBlock > b").classList.remove('addmargin');
-        document.querySelector("#btnBlock").classList.add('btnaddmargin')
+        document.querySelector("#btnBlock").classList.add('btnaddmargin');
+        br1.classList.toggle('unactive');
+        br2.classList.toggle('unactive');
+        document.querySelector('#mainBlock > span').style.padding = "0";
     } else {
         mainImg.classList.add('unactive');
         document.querySelector('.oldprice').classList.remove('unactive');
         slider.classList.remove('unactive');
         document.querySelector("#mainBlock > b").classList.add('addmargin');
-        document.querySelector("#btnBlock").classList.remove('btnaddmargin')
+        document.querySelector("#btnBlock").classList.remove('btnaddmargin');
+        br1.classList.toggle('unactive');
+        br2.classList.toggle('unactive');
+        document.querySelector('#mainBlock > span').style.padding = "0 4px 0 0";
     }
 }
 
